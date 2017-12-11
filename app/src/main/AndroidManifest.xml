@@ -17,31 +17,23 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".ProvinceReceiver"
-            android:permission="1000">
-            <intent-filter>
+        <receiver android:name=".ProvinceReceiver">
+            <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.XIDADA_SEND_RICE" />
             </intent-filter>
         </receiver>
-        <receiver
-            android:name=".CityReceiver"
-            android:permission="800">
-            <intent-filter>
+        <receiver android:name=".CityReceiver">
+            <intent-filter android:priority="800">
                 <action android:name="android.intent.action.XIDADA_SEND_RICE" />
             </intent-filter>
         </receiver>
-        <receiver
-            android:name=".CountryReceiver"
-            android:permission="200">
-            <intent-filter>
+        <receiver android:name=".CountryReceiver">
+            <intent-filter android:priority="200">
                 <action android:name="android.intent.action.XIDADA_SEND_RICE" />
             </intent-filter>
         </receiver>
-        <receiver
-            android:name=".ProvinceReceiver"
-            android:permission="10">
-            <intent-filter>
+        <receiver android:name=".FarmerReceiver">
+            <intent-filter android:priority="10">
                 <action android:name="android.intent.action.XIDADA_SEND_RICE" />
             </intent-filter>
         </receiver>

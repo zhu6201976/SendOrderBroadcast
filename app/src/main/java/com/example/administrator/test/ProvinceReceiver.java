@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class ProvinceReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        setResultData("习大大给每位村民发了500斤大米");
         String resultData = getResultData();
         Toast.makeText(context, "province:" + resultData, Toast.LENGTH_SHORT).show();
     }
